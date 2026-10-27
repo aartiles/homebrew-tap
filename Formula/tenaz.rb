@@ -1,14 +1,14 @@
 class Tenaz < Formula
-  desc "Single-model runner: plans, builds and verifies a goal with one resident local model at a time."
+  desc "Drives a local model through a coding agent until the goal passes its checks."
   homepage "https://github.com/aartiles/tenaz"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aartiles/tenaz/releases/download/v0.1.0/tenaz-aarch64-apple-darwin.tar.gz"
-    sha256 "46f230075e7859edcaba4bf8d0b6183fbc9f42ef477917af2a48a4f384a3803e"
+    url "https://github.com/aartiles/tenaz/releases/download/v0.1.1/tenaz-aarch64-apple-darwin.tar.gz"
+    sha256 "9e4434dda27a06a43aac4f46c38dc173c43f0ec7222493f96c2b1dbcb5d7f21b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aartiles/tenaz/releases/download/v0.1.0/tenaz-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "ca06ee38dc41d6124a896901b4af0b739870e40ee30c82c902493e373a966de4"
+    url "https://github.com/aartiles/tenaz/releases/download/v0.1.1/tenaz-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "5dd7798ead8d28086632a4cdab1100ca6fd0edb674a00a0d669e9a7d6695a1a2"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
