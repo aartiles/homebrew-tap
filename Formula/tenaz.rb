@@ -1,14 +1,14 @@
 class Tenaz < Formula
   desc "Drives a local model through a coding agent until the goal passes its checks."
   homepage "https://github.com/aartiles/tenaz"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/aartiles/tenaz/releases/download/v0.3.0/tenaz-aarch64-apple-darwin.tar.gz"
-    sha256 "60dd30384c79b851e7b882e63b970f97461bc158c1d6170bdfa8d9e5cf562216"
+    url "https://github.com/aartiles/tenaz/releases/download/v0.4.0/tenaz-aarch64-apple-darwin.tar.gz"
+    sha256 "c2caca37fa19461bb3c79cb50a604f5e9c8432fa17023a34b9f23c14ea1bcea4"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aartiles/tenaz/releases/download/v0.3.0/tenaz-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "f13f2c0012139d8a88263e985ba64acb346f5d3698eb265a5f38446fe6bba303"
+    url "https://github.com/aartiles/tenaz/releases/download/v0.4.0/tenaz-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "d35f077cad1d24554878ee94eee397c9a7fc3e00b88a296b78727987765f97c2"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
